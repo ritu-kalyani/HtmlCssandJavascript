@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.container {
+    display: flex;
+    margin: auto 1em;
+}
+.chicken, .beef, .sushi {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    width: 33.33%;
+    background-color: gray;
+    padding: 0em 0em 0.5em 1em;
+    margin: 0.7em 5px;
+    float: left;
+    margin: 1em 1.5em;
+    justify-content: flex-end;
+}
+
+div > h1 {
+    display: flex;
+    text-align: right;
+    padding: 0.1em;
+    margin: 0;
+    width: 50%;
+    justify-content: center;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 1.6em;
+}
+
+.chicken > h1 {
+    background-color: pink;
+}
+
+.beef > h1 {
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+}
+
+.sushi > h1 {
+    background-color: #f3f39c;
+}
+#title{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start; 
+    }
+
+    .chicken, .beef {
+        flex-grow: 1;
+    }
+    .sushi {
+        width: 100%;
+    }
+
+    .sushi > h1 {
+        width: fit-content;
+        padding: 0em 1.5em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .chicken, .beef, .sushi { 
+        width: 100%;
+    }
+}
