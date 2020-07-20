@@ -1,2 +1,2 @@
 # HtmlCssandJavascript
-Html,Css,Javascript
+Html,Css and JavaScript
