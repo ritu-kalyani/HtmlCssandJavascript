@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #595959!important;
+    padding-left: 1em!important;
+}
+
+.navbar-toggle-icon {
+    width: 25px;
+    height: 2px;
+    background-color: #ef1620;
+}
+
+button {
+    border: 0!important;
+}
+ul {
+    background-color: #f6f6f6;
+}
+li {
+    padding: 0.1em;
+    text-align: center;
+    margin: 0;
+    border: 1px solid #e6e6e6;
+}
+
+#navbarToggleExternalContent > #navbar-background > .flex-column > li.nav-item:hover {
+    background-color: #ccc;
+}
+
+
+.text-center {
+    font-size: 24px;
+    padding: 1em;
+    font-weight: bold;
+}
+
+#menu {
+    background-image: url("https://chowman.net/wp-content/uploads/2019/02/bg-section.jpg");
+}
+
+#menu > .text-center {
+    font-size: 20px;
+}
+
+#menu > .px-4 .pb-4 .pt-0  {
+    font-size: 16px;
+}
